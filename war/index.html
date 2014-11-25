@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="abdaApp">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<!-- ================================================================ -->
+<!-- NOTE you must specify the right order of js's loading  sequence. --> 
+<!-- The dependent js's must proceed the js' that depends on the former. -->
+<!-- =============================================================== -->
+
+<!-- load angular and dependent libraries -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<script src="//cdn.jsdelivr.net/angularjs/1.2.25/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.11/angular-ui-router.min.js"></script>
+<script src="//cdn.jsdelivr.net/angularjs/1.2.25/angular-animate.min.js"></script>
+
+<!-- load modules -->
+<link rel="stylesheet" href="abda.css">
+<script src="app.js"></script>
+<script src="apps/setting/abda-setting-app.js"></script>
+<script src="apps/tcwi/abda-tcwi-app.js"></script>
+</head>
+
+<body>
+	<div ui-view class="container"></div>
+	
+	<footer class="text-center text-mute">
+        <p>Disclaimer: This is a mock-up for demonstration only.</p>
+        <p>Copyright © 2014 Carnegie Mellon University Auton Lab. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>

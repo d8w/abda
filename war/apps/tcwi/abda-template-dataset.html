@@ -1,0 +1,19 @@
+<div class="row">
+
+    <!-- ======== -->
+    <!-- Datasets -->
+    <!-- ======== -->
+	<div class="col-lg-4">
+		<select ng-model="datasets" ng-options="dataset.name for dataset in activeDatasets">
+			<option value="">-- Choose preloaded file --</option>
+		</select>
+	</div>
+
+	<div class="col-lg-4">
+		<button class="btn btn-default">Upload files...</button>
+	</div>
+
+	<div class="col-lg-4">
+		<button class="btn btn-default">Clear data</button>
+	</div>
+</div>

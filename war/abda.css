@@ -1,0 +1,27 @@
+/** full width */
+.abda-full-width {
+	width: 100%;
+}
+
+/** vertical and horizontal centered */
+.hvcenter {
+	/* vertical center*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+	/* horizontal center*/
+  text-align: center;
+}
+
+.gwt-TextArea-tinyconsole {
+    font-family: Arial,sans-serif;
+    font-size: 0.72em;
+    color: #19099F;
+    margin-bottom: 5px;
+    border-width: 2px;
+    background-color: #FAFFCF;
+}

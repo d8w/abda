@@ -1,0 +1,21 @@
+<div class="modal-header">
+        <label>Please select a data provider</label>
+</div>
+
+<div class="modal-body">
+
+    <div class="row">
+        <div ng-repeat="provider in providers">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <button class="btn btn-default btn-lg text-uppercase" ng-click="selectProvider(provider)">
+                {{provider.name}}
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <p class="text-mute">You can change the provider later by clicking <i class="glyphicon glyphicon-cog"></i></p>
+</div>
