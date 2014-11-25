@@ -13,4 +13,5 @@ abdaSettingApp
 	$scope.selectProvider = function(provider) {
 		$modalInstance.close(provider);
 	};
+	
 }]);
