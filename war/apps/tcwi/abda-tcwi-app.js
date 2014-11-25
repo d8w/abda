@@ -92,8 +92,8 @@ abdaTcwiApp
 		provider: 'cdc',
 		members: [{name: 'CDC-1.tcube'}, {name: 'CDC-2.tcube'}, {name: 'CDC-3.tcube'}]
 	}, {
-		provider: 'usda',
-		members: [{name: 'USDA-1.tcube'}, {name: 'USDA-2.tcube'}, {name: 'USDA-3.tcube'}]
+		provider: 'fsis',
+		members: [{name: 'FSIS-1.tcube'}, {name: 'FSIS-2.tcube'}, {name: 'FSIS-3.tcube'}]
 	}];
 	$scope.datasets.push({
 		provider: 'joint',
