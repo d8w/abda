@@ -1,26 +1,57 @@
-<img src="img/header.jpg" class="abda-full-width"></img>
-<p class="text-center"><strong>PHIS T-Cube Web Interface</strong></p>
+<!-- Nav bar -->
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+	<div class="container-fluid">
 
-<p>Please do not click on the Back/Forward/Refresh buttons during the use of this interface.
-    <button class="btn btn-link pull-right" ng-click="modal()"
-        tooltip-placement="right" tooltip="A user can click the button to change the dataset list.">
-        <i class="glyphicon glyphicon-cog"></i></button>
-</p>
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TCWI</a>
+        </div>
 
-<textarea readonly="" class="abda-full-width gwt-TextArea-tinyconsole gwt-TextArea-tinyconsole-readonly"></textarea>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse">
+            <form class="navbar-form navbar-right" >
+                <button class="btn btn-link pull-right" ng-click="modal()"
+                    tooltip-placement="bottom" tooltip="A user can click the button to change the dataset list.">
+                    <i class="glyphicon glyphicon-cog"></i>
+                </button>
+            </form>
+		</div>
 
-<div class="row">
-    <div class="col-lg-12">
-        <accordion close-others="true"> 
-            <accordion-group ng-repeat="panel in Panels" is-open="panel.open">
-                <accordion-heading>
-                    <i class="glyphicon" ng-class="{'glyphicon-chevron-down': panel.open, 'glyphicon-chevron-right': !panel.open}"></i>
-                    {{panel.display}}
-                </accordion-heading>
-                <div ui-view="{{panel.uiView}}"></div>
-            </accordion-group>
-        </accordion>
+	</div>
+</nav>
+
+<div class="main-body">
+    <img src="img/header.jpg" class="abda-full-width"></img>
+    <p class="text-center"><strong>PHIS T-Cube Web Interface</strong></p>
+
+    <p>Please do not click on the Back/Forward/Refresh buttons during the use of this interface.</p>
+
+    <textarea readonly="" class="abda-full-width gwt-TextArea-tinyconsole gwt-TextArea-tinyconsole-readonly"></textarea>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <accordion close-others="true"> 
+                <accordion-group ng-repeat="panel in Panels" is-open="panel.open">
+                    <accordion-heading>
+                        <i class="glyphicon" ng-class="{'glyphicon-chevron-down': panel.open, 'glyphicon-chevron-right': !panel.open}"></i>
+                        {{panel.display}}
+                    </accordion-heading>
+                    <div ui-view="{{panel.uiView}}"></div>
+                </accordion-group>
+            </accordion>
+        </div>
     </div>
-</div>
 
-<textarea readonly="" class="abda-full-width gwt-TextArea-tinyconsole gwt-TextArea-tinyconsole-readonly"></textarea>
+    <textarea readonly="" class="abda-full-width gwt-TextArea-tinyconsole gwt-TextArea-tinyconsole-readonly"></textarea>
+	
+	<!-- Footer: copyright and disclaimer -->
+	<footer class="text-center text-mute">
+        <p>Disclaimer: This is a mock-up for demonstration purpose only.</p>
+        <p>Copyright © 2014 Carnegie Mellon University Auton Lab. All rights reserved.</p>
+	</footer>
+</div>

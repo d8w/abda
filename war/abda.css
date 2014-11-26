@@ -25,3 +25,8 @@
     border-width: 2px;
     background-color: #FAFFCF;
 }
+
+/** leave space for the navbar */
+.main-body {
+	padding-top:60px;
+}
