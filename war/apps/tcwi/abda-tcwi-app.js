@@ -118,7 +118,6 @@ abdaTcwiApp
     	var modalInstance = $modal.open({
     		controller: 'abdaSettingAppCtrl',
     		templateUrl: 'apps/setting/abda-template-setting.html',
-    		size: 'lg',
     		windowClass: 'hvcenter', // defined in cmds-dataset-carousel-app.css
     		backdrop: 'static',
     		resolve: {
