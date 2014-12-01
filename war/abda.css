@@ -30,3 +30,8 @@
 .main-body {
 	padding-top:60px;
 }
+
+/** Fixed modal dialog with */
+.modal-dialog {
+	width:100%
+}
